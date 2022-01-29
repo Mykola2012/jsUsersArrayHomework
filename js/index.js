@@ -38,7 +38,7 @@ console.log("usersc.getFullName :>> ", users[5].getFullName());
 console.group("Task 1.2");
 
 const schoolgirlsFullName = users
-  .filter((user) => user.isMale === true && user.age >= 6 && user.age <= 18)
+  .filter((user) => !user.isMale && user.age >= 6 && user.age <= 18)
   .map((user) => user.getFullName());
 
 console.log("schoolgirlsFullName :>> ", schoolgirlsFullName);
